@@ -1,8 +1,12 @@
 import axios from 'axios';
 
+// const api = axios.create({
+//   baseURL: 'http://localhost:5000/api',
+// });
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api',
-});
+  baseURL: 'https://militaryassetmanagement-system-backend.onrender.com/api',
+})
+
 
 // Add token automatically
 api.interceptors.request.use((config) => {
