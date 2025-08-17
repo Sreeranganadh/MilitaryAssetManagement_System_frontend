@@ -1,15 +1,15 @@
 import axios from 'axios';
 
-// const api = axios.create({
-//   baseURL: 'http://localhost:5000/api',
-// });
-
-const BASE = 'https://militaryassetmanagement-system-backend.onrender.com/api'; 
-
 const api = axios.create({
-   baseURL: BASE ? `${BASE}/api` : '/api',
-  withCredentials: true
-})
+  baseURL: 'https://militaryassetmanagement-system-backend.onrender.com/api' || 'http://localhost:5000/api',
+});
+
+// const BASE = 'https://military-a432.onrender.com'; 
+
+// const api = axios.create({
+//    baseURL: BASE ? `${BASE}/api` : '/api',
+//   withCredentials: true
+// })
 
 
 // Add token automatically
