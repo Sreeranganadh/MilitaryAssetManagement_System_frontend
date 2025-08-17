@@ -47,7 +47,6 @@ const Login = () => {
       }
 
       navigate("/dashboard");
-      // avoid full reload; App reads token from localStorage and will render
     } catch (err) {
       const message = err.response?.data?.message || err.message || "Unknown error";
       console.error("Login error:", err);
@@ -56,7 +55,6 @@ const Login = () => {
       alert(`Login failed: ${message}`);
     }
   };
-
   return (
     <div className="login-wrapper">
       <div className="login-card">
