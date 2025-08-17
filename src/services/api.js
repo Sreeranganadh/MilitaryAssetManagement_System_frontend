@@ -3,8 +3,12 @@ import axios from 'axios';
 // const api = axios.create({
 //   baseURL: 'http://localhost:5000/api',
 // });
+
+const BASE = 'https://militaryassetmanagement-system-backend.onrender.com/api'; 
+
 const api = axios.create({
-  baseURL: 'https://militaryassetmanagement-system-backend.onrender.com/api',
+   baseURL: BASE ? `${BASE}/api` : '/api',
+  withCredentials: true
 })
 
 
